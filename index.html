@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ott</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<style>
+
+  
+  body{
+    background-color: black;
+  }
+    nav{
+        height: 90px;
+        width: 100%;
+        /* background-color: black; */
+        background: rgba(166, 163, 163, 0.8160.6);
+        backdrop-filter: blur(8px);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+
+
+    }
+    .nav-logo img{
+       height: 80px;
+       width: 150px;
+       margin: 10px 10px 10px 0px;
+    }
+    nav .nav-items{
+        position: absolute;
+        right: 30px;
+    }
+    .nav-items a{
+        text-decoration: none;
+        font-size: 30px;
+        padding: 20px 10px;
+        color:white;
+    }
+    .nav-items a:hover{
+        color: blue;
+        transition: all 1s;
+        text-shadow: 2px 2px 2px red;
+    }
+    .nav-items a:hover{
+            color:blue;
+            text-shadow: 2px 3px 3px red;
+            transition: all 1s;
+            font-size: 30px;
+            font-weight: 800;
+            
+        }
+    .carousel-inner img{
+        height: 650px;
+        width: 85%;
+
+        
+      
+    }
+    .carousel-inner{
+      margin: 0px 0px 5px 150px;
+    }
+    
+    .carousel-control-prev-icon{
+      position: relative;
+      left: 150px;
+    }
+    .carousel-control-next-icon{
+      position: relative;
+      right: 100px;
+    }
+    #carouselExampleAutoplaying{
+      width: 93%;
+    }
+    .frequent-image img{
+        height: 280px;
+        width: 15%;
+        margin: 0px 0px 5px 15px;
+    }
+    .frequent-image img:hover{
+      transform: scale(1.2);
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+    }
+    #freq-watchlist{
+      margin-top: 120px;
+      color: aliceblue;
+    }
+    #carouselExampleAutoplaying{
+      margin-top: 90px;
+    }
+    h2:hover{
+      font-size: 50px;
+      color: rgb(47, 197, 194);
+      font-weight: 700;
+    }
+    .down-image img{
+        height: 290px;
+        width: 15%;
+        margin: 0px 0px 5px 15px;
+    }
+    
+    .down-image img:hover{
+      transform: scale(1.2);
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+    }
+    #down{
+      margin-top: 150px;
+      color: aliceblue;
+    }
+    .release-image img{
+        height: 280px;
+        width: 15%;
+        margin: 0px 0px 5px 15px;
+    }
+    
+    .release-image img:hover{
+      transform: scale(1.2);
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+    }
+    #new-release{
+      margin-top: 130px;
+      color: aliceblue;
+    }
+    .biopic-image img{
+        height: 280px;
+        width: 15%;
+        margin: 0px 0px 5px 15px;
+    }
+    
+    .biopic-image img:hover{
+      transform: scale(1.2);
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+    }
+    #top-biopic{
+      
+      color: aliceblue;
+    }
+    .favour-image img{
+        height: 280px;
+        width: 15%;
+        margin: 0px 0px 5px 15px;
+    }
+    
+    .favour-image img:hover{
+      transform: scale(1.2);
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+    }
+    #top-favour{
+      margin-top: 130px;
+      color: aliceblue;
+    }
+    #aa{
+          
+          display:inline-block;
+          /* justify-content: space-around; */
+          /* justify-content: center;
+          align-items: center; */
+        }
+        .ab{
+          /* justify-content: space-evenly; */
+          display: flex;
+          
+         
+        }
+        .as{
+          display:inline-block;
+          color: aliceblue;
+          margin-top: 150px;
+          /* margin:100px; */
+          margin-left: 100px;
+          display:flex;
+          align-items:center;
+          /*margin-right:50px; */
+          
+          
+
+        }
+        .att{
+          display:inline-block;
+          color: aliceblue;
+          margin-bottom:10px;
+          /* margin: 100px; */
+          margin-left:80px;
+          
+
+          font-size:10px;
+          /* margin:100px; */
+          /* justify-content: space-around;
+          display:flex;
+          align-items:center; */
+          
+          
+
+        }
+        .ayy{
+          display:inline-block;
+          color: aliceblue;
+          margin-top: -80px;
+          /* margin: 100px; */
+          margin-left:80px;
+          
+          
+
+          font-size:10px;
+          /* margin:100px; */
+          /* justify-content: space-around; */
+          display:flex;
+          /* align-items:center;  */
+          
+          
+
+        }
+        
+        .att img{
+          height:30px;
+          width:30px;
+          /* margin-left:120px; */
+        }
+        #carouselExampleAutoplaying{
+          width:95%;
+        }
+        #sf{
+          margin-top:65px;
+          margin-left:750px;
+          font-size: 11px;
+        }
+        #vh{
+          margin-left:360px;
+        }
+        .z{
+          font-size: 18px;
+        }
+        #c{
+          margin-top:7px;
+        }
+        #csk{
+          margin-top:10px;
+          margin-left:9px;
+          font-size: 11px;
+        }
+        #q{
+          margin-left:-70px;
+        }
+        #r{
+          margin-left:270px;
+        }
+        #s{
+          margin-left:290px;
+        }
+        #t{
+          margin-left:300px;
+        }
+        #u{
+          margin-left:9px;
+        }
+        #v{
+          margin-left:285px;
+        }
+        .att{
+          font-size:12px;
+        }
+        #i{
+          margin-left:290px;
+        }
+        #rcb{
+          font-size:12px;
+          color:gainsboro;
+          margin-top:30px;
+          margin-left:5px;
+        }
+        #sk{
+          font-size:12px;
+          color:gainsboro;
+          margin-top:20px;
+          margin-left:5px;
+        }
+        .qas{
+          margin-left:1000px;
+          margin-top:-30px;
+        }
+        .app{
+          margin-left:1110px;
+          margin-top:-30px;
+        }
+    
+</style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMigjbAfLPVcImG2rqzOTHDPLC9lq_4AjMxy_kXpWR&s" alt=""></div>
+        <div class="nav-items">
+            <a href="#carouselExampleAutoplaying">Home</a>
+            <a href="#freq-watchlist">Watchlist</a>
+            <a href="#down">Downloads</a>
+            <a href="#new-release">New Releases</a>
+            <a href="#top-biopic">Biopic</a>
+            <a href="#top-favour">Favourites</a>
+            <a href="login (1).html">Sign in/sign up</a>
+        </div>
+
+    </nav>
+    <!-- Home section Begin -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="200">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="topgun.jpg" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="ib71.jpg" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="avatar.jpg" class="d-block " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Home section end -->
+      
+      <!-- Watchlist section start -->
+        <div class="frequent" id="freq-watchlist">
+          <h2>Watchlist</h2>
+        <div class="frequent-image">
+          <img src="1770003314-v.webp" alt="">
+          <img src="1389219-v-9752e6e5bb92.webp" alt="">
+          <img src="Kedarnath_film_Poster.jpg" alt="">
+          <img src="hrithik-tiger-war.jpg" alt="">
+          <img src="unnamed.jpg" alt="">
+          <img src="percy.jpg" alt="">
+          <img src="got.jpg" alt="">
+          <img src="harry.jpg" alt="">
+          <img src="kantara.jpg" alt="">
+          <img src="BANNER.jpg" alt="">
+          <img src="open.webp" alt="">
+          <img src="main.jpg" alt="">
+        </div>
+      </div>
+      
+        <!-- Watchlist section ends -->
+
+        <!-- Downloads section begins -->
+        <div class="download" id="down">
+          <h1>Downloads</h1>
+          <div class="down-image" >
+            <img src="down-1.webp" alt="">
+            <img src="down-2.jpg" alt="">
+            <img src="down-3.jpg" alt="">
+            <img src="down-4.jpg" alt="">
+            <img src="down-5.jpg" alt="">
+            <img src="down-6.jpg" alt="">
+            
+          </div>
+        </div>
+        <!-- downloads section ends -->
+        
+        <!-- New releases section begins -->
+        <div class="release" id="new-release">
+            <h1>New Releases</h1>
+            <div class="release-image">
+              <img src="release-1.jpg" alt="">
+              <img src="release-2.webp" alt="">
+              <img src="release-3.jpg" alt="">
+              <img src="release-4.jpg" alt="">
+              <img src="release-5.jpg" alt="">
+              <img src="release-6.jpg" alt="">
+              <img src="release-7.jpg" alt="">
+              <img src="release-8.jpg" alt="">
+              <img src="release-9.jpg" alt="">
+              <img src="release-10.jpg" alt="">
+              <img src="release-11.jpg" alt="">
+              <img src="release-12.jpg" alt="">
+            </div>
+        </div>
+         <!-- New releases section ends -->
+
+         <!-- Top rated begins -->
+         <div class="biopic" id="top-biopic">
+            <h1>Biopic</h1>
+            <div class="biopic-image">
+              <img src="biopic-1.jpg" alt="">
+              <img src="biopic-2.jpg" alt="">
+              <img src="biopic-3.jpg" alt="">
+              <img src="biopic-4.jpg" alt="">
+              <img src="biopic-5.jpg" alt="">
+              <img src="biopic-6.jpg" alt="">
+              <img src="biopic-7.jpg" alt="">
+              <img src="biopic-8.jpg" alt="">
+              <img src="biopic-9.jpg" alt="">
+              <img src="biopic-10.jpg" alt="">
+              <img src="biopic-11.jpg" alt="">
+              <img src="biopic-12.jpg" alt="">
+            </div>
+         </div>
+         <!-- Top rated ends -->
+         <!-- Favourites section begins -->
+         <div class="favourite" id="top-favour">
+            <h1>Favourites</h1>
+            <div class="favour-image">
+              <img src="kantara.jpg" alt="">
+              <img src="got.jpg" alt="">
+              <img src="release-4.jpg" alt="">
+              <img src="unnamed.jpg" alt="">
+              <img src="biopic-5.jpg" alt="">
+              <img src="down-5.jpg" alt="">
+              <img src="Kedarnath_film_Poster.jpg" alt="">
+              <img src="topgun.jpg" alt="">
+              <img src="biopic-9.jpg" alt="">
+              <img src="avatar.jpg" alt="">
+              <img src="favor-1.jpg" alt="">
+              <img src="1389219-v-9752e6e5bb92.webp" alt="">
+            </div>
+         </div><br><br>
+         <!-- Favourites section ends -->
+         <div class="ab" id="about">
+          <h3 style="color: white;">About</h3>
+          
+        <div class="as" id="q">Company</div> 
+        <div class="as" id="r">View Website in</div>
+          <div class="as" id="s">Need Help?</div>
+          <div class="as" id="t">Connect with Us</div>
+        </div><br>
+        <div class="at">
+          <div class="att" id="u">About Us</div>
+          <div class="att" id="v">English</div>
+          <div class="att" id="vh">Visit Help Center</div>
+          <div class="att" id="i">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMn-LrY8dTdY_lhh39ZRk0IHd7buYoDaORxQ&usqp=CAU" alt="" style="border-radius: 50%; border:1px solid white;" >
+            <i class="fa fa-twitter" style="font-size:36px"></i>
+          </div>
+          
+        </div>
+        <div class="ay">
+          <div class="ayy" id="csk">Careers</div>
+          <div class="ayy"></div>
+          <div class="ayy" id="sf">Share Feedback</div>
+          
+          </div>
+          <div class="privacy">
+            <div class="pyy" id="rcb">&copy; 2023 STAR.All Rights Reserved.</div>
+            <!-- <div class="pyy"></div> -->
+            <div class="pyy" id="sk">Terms Of Use Privacy Policy FAQ</div>
+            <div class="qas"><img src="gg.png" alt="" height="30px" width="100px"></div>
+            <div class="app"><img src="app.png" alt="" height="30px" width="100px"></div>
+            </div>
+            <br><br>
+         
+          
+
+         
+    
+    
+</body>
+</html>
